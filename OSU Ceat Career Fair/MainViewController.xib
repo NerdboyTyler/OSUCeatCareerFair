@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="aboutButton" destination="M2z-Rc-SHL" id="67p-il-uDV"/>
+                <outlet property="mapButton" destination="4SL-ZQ-pyY" id="Oo4-p9-i4R"/>
+                <outlet property="navBar" destination="siI-io-2b5" id="Ld4-5u-sMV"/>
+                <outlet property="tableView" destination="HhA-f6-s5Q" id="khu-dG-tsf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="dmc-hN-15B"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siI-io-2b5">
+                    <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                    <color key="barTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <navigationItem title="OSU Ceat Career Fair" id="Fuh-mQ-vJi">
+                            <barButtonItem key="leftBarButtonItem" title="Map" id="4SL-ZQ-pyY">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="map:" destination="-1" id="lTM-Vb-TJB"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="About" id="M2z-Rc-SHL">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="about:" destination="-1" id="gtu-Sy-D8l"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HhA-f6-s5Q">
+                    <rect key="frame" x="0.0" y="65" width="320" height="415"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Avq-66-2WC"/>
+                        <outlet property="delegate" destination="-1" id="Tky-QN-6gq"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="siI-io-2b5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0JW-Xw-g5c"/>
+                <constraint firstItem="HhA-f6-s5Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ce4-X1-ndd"/>
+                <constraint firstAttribute="trailing" secondItem="siI-io-2b5" secondAttribute="trailing" id="Ef0-h7-Jrl"/>
+                <constraint firstItem="siI-io-2b5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="21" id="KLw-f2-VKX"/>
+                <constraint firstItem="siI-io-2b5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="R3K-UW-h3D"/>
+                <constraint firstItem="HhA-f6-s5Q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XUp-Jf-HRM"/>
+                <constraint firstItem="HhA-f6-s5Q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65" id="bdX-Hp-fym"/>
+                <constraint firstAttribute="bottom" secondItem="HhA-f6-s5Q" secondAttribute="bottom" id="js6-9g-uAJ"/>
+                <constraint firstAttribute="trailing" secondItem="HhA-f6-s5Q" secondAttribute="trailing" id="u6i-vw-1hb"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

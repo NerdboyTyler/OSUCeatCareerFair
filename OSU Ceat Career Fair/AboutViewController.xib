@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController">
+            <connections>
+                <outlet property="backButton" destination="a7e-t0-QwW" id="kl9-d4-ryD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="jr7-0C-rEa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutscreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="b3E-PZ-8zZ">
+                    <rect key="frame" x="0.0" y="22" width="320" height="458"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7e-t0-QwW">
+                    <rect key="frame" x="14" y="22" width="34" height="30"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="YcA-Y8-ps4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b3E-PZ-8zZ" secondAttribute="trailing" id="318-du-JM9"/>
+                <constraint firstItem="a7e-t0-QwW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="8WF-37-e3V"/>
+                <constraint firstItem="b3E-PZ-8zZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="FCM-bB-zfo"/>
+                <constraint firstAttribute="bottom" secondItem="b3E-PZ-8zZ" secondAttribute="bottom" id="JIV-Qk-nw7"/>
+                <constraint firstItem="b3E-PZ-8zZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eKP-Dx-s4B"/>
+                <constraint firstItem="a7e-t0-QwW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="g29-or-wOu"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="aboutscreen.png" width="490" height="879"/>
+    </resources>
+</document>
